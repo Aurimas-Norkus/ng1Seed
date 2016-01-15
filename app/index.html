@@ -1,46 +1,64 @@
 <!DOCTYPE html>
 <!--[if lt IE 7]>
-<html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>
-<html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>
-<html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<html lang="en" class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
-<html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<html lang="en" class="no-js"> <!--<![endif]-->
 <head>
   <meta charset="utf-8">
+  <title>NG Seed</title>
+
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My AngularJS App</title>
   <meta name="description" content="">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- Windows icons (Should be removed if not used)-->
+  <meta name="msapplication-TileImage" content="">
+  <meta name="msapplication-TileColor" content="">
+  <!-- iOS icons (Should be removed if not used)-->
+  <link rel="apple-touch-icon-precomposed" href="">
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="">
+  <link rel="shortcut icon" href="">
+
   <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
+<body class="ng-cloak" ng-class="debug" ng-app="appCore" ng-controller="MainCtrl as vm_m">
 
-<ul class="menu">
-  <li><a href="#/view1">view1</a></li>
-  <li><a href="#/view2">view2</a></li>
-</ul>
+<header-v header="vm_m.header">Loading...</header-v>
+<navigation-v navigation="vm_m.navigation">Loading...</navigation-v>
+<div class="ng-cloak page" ng-view>Loading...</div>
 
 <!--[if lt IE 7]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
   your browser</a> to improve your experience.</p>
 <![endif]-->
 
-<div class="ng-cloak page" ng-view></div>
-
-<div>Angular seed app: v<span app-version></span></div>
-
 <!-- In production use:
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
 -->
 <script src="bower_components/angular/angular.js"></script>
 <script src="bower_components/angular-route/angular-route.js"></script>
+
+<!-- App -->
 <script src="app.js"></script>
-<script src="view1/view1.js"></script>
-<script src="view2/view2.js"></script>
-<script src="components/version/version.js"></script>
-<script src="components/version/version-directive.js"></script>
-<script src="components/version/interpolate-filter.js"></script>
+<!-- Controllers -->
+<script src="scripts/controllers/main.controller.js"></script>
+<script src="scripts/controllers/page.controller.js"></script>
+<!-- Services -->
+
+<!-- Directives -->
+<script src="scripts/components/headerV.directive.js"></script>
+<script src="scripts/components/navigationV.directive.js"></script>
+
 </body>
 </html>

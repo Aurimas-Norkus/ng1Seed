@@ -1,0 +1,9 @@
+<nav class="breadcrumb" role="navigation">
+  <ol>
+    <li ng-repeat="nav in data.nav" ng-class="nav.class">
+      <a ng-href="#/{{nav.url}}" ng-if="!nav.disabled()">
+        <span>{{nav.title}}</span>
+      </a>
+    </li>
+  </ol>
+</nav>
