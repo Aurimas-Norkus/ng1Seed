@@ -1,0 +1,27 @@
+<div ng-form="form" ng-class="{loading: loading, submitted: submitted, 'debug-mode':debug}">
+  <div class="error-flash-message" ng-if="totalError()">
+    <i class="icon"></i> Please correct the <strong>{{totalError('error')}}</strong> on the page
+  </div>
+  <div class="disabled-layout"></div>
+  <main class="content-main" role="main">
+
+    <div class="page-hero" ng-if="contents.header">
+      <h2>{{contents.header}}</h2>
+      <p ng-repeat="text in contents.subTitle">{{text}}</p>
+    </div>
+
+    <div class="inner-content">
+
+      <div ng-repeat="item in contents.children" tpl="item"></div>
+
+    </div>
+  </main>
+
+  <footer class="footer-main">
+    <span modal="logout">Debug</span>
+    <div class="page-actions">
+      <button type="button" ng-if="nextPage" ng-click="nextPage()" class="btn btn-primary btn-large">Continue</button>
+    </div>
+  </footer>
+
+</div>
