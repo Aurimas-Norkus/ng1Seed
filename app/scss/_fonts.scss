@@ -1,10 +1,10 @@
-$font-khand-regular: "KhandRegular";
+$font-roboto-light: "RobotoLight";
 @font-face {
-  font-family: $font-khand-regular;
-  src: url($asset-dir + 'fonts/khand_regular/KhandRegular.eot');
-  src: url($asset-dir + 'fonts/khand_regular/KhandRegular.eot') format('embedded-opentype'),
-  url($asset-dir + 'fonts/khand_regular/KhandRegular.woff2') format('woff2'),
-  url($asset-dir + 'fonts/khand_regular/KhandRegular.woff') format('woff'),
-  url($asset-dir + 'fonts/khand_regular/KhandRegular.ttf') format('truetype'),
-  url($asset-dir + 'fonts/khand_regular/KhandRegular.svg#' + $font-khand-regular) format('svg');
+  font-family: $font-roboto-light;
+  src: url($asset-dir + 'fonts/roboto_light/Roboto-Light-webfont.eot');
+  src: url($asset-dir + 'fonts/roboto_light/Roboto-Light-webfont.eot') format('embedded-opentype'),
+  url($asset-dir + 'fonts/roboto_light/Roboto-Light-webfont.woff2') format('woff2'),
+  url($asset-dir + 'fonts/roboto_light/Roboto-Light-webfont.woff') format('woff'),
+  url($asset-dir + 'fonts/roboto_light/Roboto-Light-webfont.ttf') format('truetype'),
+  url($asset-dir + 'fonts/roboto_light/Roboto-Light-webfont.svg#' + $font-roboto-light) format('svg');
 }
