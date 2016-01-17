@@ -3,7 +3,6 @@ $font-roboto-light: "RobotoLight";
   font-family: $font-roboto-light;
   src: url($asset-dir + 'fonts/roboto_light/Roboto-Light-webfont.eot');
   src: url($asset-dir + 'fonts/roboto_light/Roboto-Light-webfont.eot') format('embedded-opentype'),
-  url($asset-dir + 'fonts/roboto_light/Roboto-Light-webfont.woff2') format('woff2'),
   url($asset-dir + 'fonts/roboto_light/Roboto-Light-webfont.woff') format('woff'),
   url($asset-dir + 'fonts/roboto_light/Roboto-Light-webfont.ttf') format('truetype'),
   url($asset-dir + 'fonts/roboto_light/Roboto-Light-webfont.svg#' + $font-roboto-light) format('svg');

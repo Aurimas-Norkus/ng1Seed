@@ -1,0 +1,42 @@
+{
+  "header": "Login",
+  "children": [
+    {
+      "tpl": "view/box",
+      "header": "Controller",
+      "children": [
+        {
+          "tpl": "input/text",
+          "label": "First Name",
+          "name": "inputExamples.name.firstName",
+          "validate": {
+            "required": true
+          }
+        },
+        {
+          "tpl": "input/text",
+          "label": "password",
+          "name": "inputExamples.name.lastName",
+          "validate": {
+            "required": true
+          }
+        }
+      ]
+    },
+    {
+      "tpl": "view/box",
+      "header": "Controller",
+      "children": [
+        {
+          "tpl": "button/buttons",
+          "list": [
+            {
+              "label": "Login",
+              "value": "login"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,23 +1,25 @@
 /**
  * Created by Aurimas on 1/15/2016.
  */
+'use strict';
+
 angular
   .module('appCore')
-  .controller('MainCtrl', function ($rootScope, $scope, $location, $log) {
+  .controller('MainCtrl', function ($log) {
 
     /* jshint validthis: true */
-    var vm_m = this;
+    var vm = this;
 
     // Navigation data
-    vm_m.navigation = {
+    vm.navigation = {
       nav: [
         {
-          url: '/home',
+          url: 'home',
           title: 'Home view',
           class: ''
         },
         {
-          url: '/login',
+          url: 'login',
           title: 'Login view',
           class: ''
         }
@@ -25,7 +27,7 @@ angular
     };
 
     // Header data
-    vm_m.header = {
-      title:'NG Seed Application'
+    vm.header = {
+      title: 'NG Seed Application'
     };
   });
