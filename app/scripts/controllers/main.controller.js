@@ -5,7 +5,7 @@
 
 angular
   .module('appCore')
-  .controller('MainCtrl', function ($log) {
+  .controller('MainController', function ($log) {
 
     /* jshint validthis: true */
     var vm = this;

@@ -5,11 +5,11 @@
 
 angular
   .module('appCore')
-  .controller('PageCtrl', function ($route, $log, Api, Base) {
+  .controller('PageController', function ($route, $log, Api, Base) {
     /* jshint validthis: true */
     var vm = this;
 
-    $log.debug('PageCtrl', this);
+    $log.debug('PageController', vm);
     $log.debug('$route.current.params.page', $route.current.params.page);
 
     vm.defaultPage = 'home';

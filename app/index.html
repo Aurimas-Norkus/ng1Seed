@@ -32,7 +32,7 @@
 
   <link rel="stylesheet" href="css/main.css">
 </head>
-<body class="ng-cloak" ng-class="debug" ng-app="appCore" ng-controller="MainCtrl as vm_m">
+<body class="ng-cloak" ng-class="debug" ng-app="appCore" ng-controller="MainController as vm_m">
 
 <header-v header="vm_m.header">Loading...</header-v>
 <navigation-v navigation="vm_m.navigation">Loading...</navigation-v>
@@ -51,6 +51,9 @@
 
 <!-- App -->
 <script src="app.js"></script>
+<!-- Template cache-->
+<script src="scripts/templateCache/templateCache.js"></script>
+<script src="scripts/templateCache/templates.js"></script>
 <!-- Controllers -->
 <script src="scripts/controllers/main.controller.js"></script>
 <script src="scripts/controllers/page.controller.js"></script>

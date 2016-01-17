@@ -2,10 +2,11 @@
 
 angular
   .module('appCore', [
-    'ngRoute'
+    'ngRoute',
+    'templates'
   ]).config(function ($routeProvider) {
   $routeProvider
-    .when('/:page', {"templateUrl": 'views/base.html', "controller": 'PageCtrl'})
-    .when('/:page/:nr', {"templateUrl": 'views/base.html', "controller": 'PageCtrl'})
+    .when('/:page', {"templateUrl": 'views/base.html', "controller": 'PageController'})
+    .when('/:page/:nr', {"templateUrl": 'views/base.html', "controller": 'PageController'})
     .when('/', {"redirectTo": "/home"})
 });
