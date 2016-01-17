@@ -1,16 +1,15 @@
-<div ng-form="form" ng-class="{loading: loading, submitted: submitted, 'debug-mode':debug}">
-BASE
+<div ng-class="{loading: loading, submitted: submitted, 'debug-mode':debug}">
   <div class="disabled-layout"></div>
   <main class="content-main" role="main">
 
-    <div class="page-hero" ng-if="contents.header">
-      <h2>{{contents.header}}</h2>
-      <p ng-repeat="text in contents.subTitle">{{text}}</p>
+    <div class="page-hero" ng-if="vm.contents.header">
+      <h2>{{vm.contents.header}}</h2>
+      <p ng-repeat="text in vm.contents.subTitle">{{text}}</p>
     </div>
 
     <div class="inner-content">
 
-      <div ng-repeat="item in contents.children" tpl="item"></div>
+      <div ng-repeat="item in vm.contents.children" tpl="item"></div>
 
     </div>
   </main>

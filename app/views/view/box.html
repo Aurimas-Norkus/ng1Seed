@@ -3,7 +3,7 @@
 	<div class="box-header">
 		<h3>{{data.header}}</h3>
 
-		<button ng-if="data.button" ng-click="button(data)" type="button">{{data.button.label}}</button>		
+		<button ng-if="data.button" ng-click="button(data)" type="button">{{data.button.label}}</button>
 	</div>
 	<div class="box-body">
 		<div ng-repeat="item in data.children" tpl="item"></div>

@@ -5,7 +5,7 @@
 
 angular
   .module('appCore')
-  .controller('PageController', function ($route, $log, Api, Base) {
+  .controller('PageController', function ($route, $log, Api, Base, $scope) {
     /* jshint validthis: true */
     var vm = this;
 
@@ -27,4 +27,8 @@ angular
         vm.contents = response;
       });
     };
+
+    vm.load();
+
+    window.pageCtrl = vm;
   });

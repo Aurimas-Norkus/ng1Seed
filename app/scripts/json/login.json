@@ -1,22 +1,26 @@
 {
-  "header": "Login",
+  "header": "Welcome to login",
+  "subTitle": [
+    "Please sign in page"
+  ],
   "children": [
     {
       "tpl": "view/box",
-      "header": "Controller",
+      "header": "Login form",
       "children": [
         {
           "tpl": "input/text",
           "label": "First Name",
-          "name": "inputExamples.name.firstName",
+          "name": "login.form.username",
           "validate": {
             "required": true
           }
         },
         {
           "tpl": "input/text",
-          "label": "password",
-          "name": "inputExamples.name.lastName",
+          "label": "Password",
+          "type": "password",
+          "name": "login.form.password",
           "validate": {
             "required": true
           }
@@ -25,7 +29,7 @@
     },
     {
       "tpl": "view/box",
-      "header": "Controller",
+      "header": "Form actions",
       "children": [
         {
           "tpl": "button/buttons",

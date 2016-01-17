@@ -1,0 +1,9 @@
+<div class="form-row">
+  <button style="margin-right: 20px;"
+          ng-repeat="item in data.list"
+          ng-click="byValue[item.value](item)"
+          type="button"
+          class="btn-tertiary">
+    {{item.label}}
+  </button>
+</div>

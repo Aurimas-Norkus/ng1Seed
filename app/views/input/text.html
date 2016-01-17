@@ -1,0 +1,26 @@
+<div class="form-row" ng-if="!data.hide" ng-class="{blur: data.ngModel.blur.$invalid, loading: data.is.loading}">
+
+    <label for="{{data.name}}">
+        <!-- help button -->
+        <button class="btn-help" title="Help with {{data.label}}" ng-if="data.help" ng-click="data.help.show = !data.help.show" ></button>
+        {{data.label}}
+		<div class="desc">{{data.description}}</div>
+    </label>
+
+
+	<!-- input field on right -->
+	<div class="input-wrap">
+		<div class="prefix" ng-if="data.prefix"><span>£</span></div>
+		<input id="{{data.name}}" type="{{data.type}}" validate="data" autocomplete ng-model="data.value" placeholder="{{data.placeholder}}" ng-disabled="data.disabled">
+
+		<!-- url -->
+		<div ng-repeat="item in data.links">
+			<a ng-if="item.href" ng-href="#/{{item.href}}">{{item.label}}</a>
+			<a ng-if="item.modal" modal="item.modal">{{item.label}}</a>
+		</div>		
+	</div>
+
+	<div help-info-error ></div>
+
+</div>
+<div ng-repeat="item in data.children" tpl="item" class="fadein"></div>
